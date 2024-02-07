@@ -1,33 +1,49 @@
+:root {
+  --backgound-color: beige;
+  --light-color: #ffffff;
+  --dark-color: #000000; 
+}
+
 body{
   font-family: "Comic Neue", cursive;    
-
+  background-color: var(--backgound-color);
+  margin:auto
 }
 
 h1 {
-font-size: 50px;
+font-size: 2.5em;
 font-weight: 300;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 300;
 }
 
 .special-headline {
   font-weight: 900;
-  color: indigo;
+  color: var(--dark-color);
 }
 
 #unique-headline {
   font-weight: 600;
-  color: deeppink;
+  color: var(--light-color);
 }
 
 h2,h3,h4 {
   font-size: 20px;
   font-weight: 600;
-  color: #111111;
+  color: var(--dark-color);
   }
 
   .post {
-    border: 1px solid black;
-    margin-bottom: 20px;
-    padding: 10px 20px;
+    border: 1px solid var(--dark-color);
+    margin-bottom: 1em;
+    padding: .5em 1em;
+
+    .img-container{
+      aspect-ratio: 3/2;
+    }
 
     img {
       width: 100%;
@@ -38,10 +54,16 @@ h2,h3,h4 {
   }
 
   .highlight {
-    background-color: black;
-    color: beige;
+    background-color: var(--backgound-color);
+    color: var(--light-color);
     h2 {
-      color: bisque;
+      color: var(--light-color);
     }
 
   }
+
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
